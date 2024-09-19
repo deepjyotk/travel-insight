@@ -1,7 +1,3 @@
-Here’s a README file you can use for your GitHub project:
-
----
-
 # Virtual Threads vs Platform Threads - Travel Insights
 
 This project demonstrates the performance differences between the new **Virtual Threads** in Java 21 and the traditional **Platform Threads** in Java. The focus of the project is on scalability and responsiveness for a travel planning application that involves services like **trip reservations**, **event recommendations**, **accommodation bookings**, and more.
