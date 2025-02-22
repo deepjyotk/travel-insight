@@ -1,5 +1,4 @@
 package com.deepjyot.travel_insight.config;
-
 import org.springframework.boot.autoconfigure.condition.ConditionalOnThreading;
 import org.springframework.boot.autoconfigure.thread.Threading;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +13,7 @@ public class ExecutorServiceConfig {
     @Bean
     @ConditionalOnThreading(Threading.VIRTUAL)
     public ExecutorService virtualThreadExecutor(){
-        return Executors.newVirtualThreadPerTaskExecutor();
+            return Executors.newVirtualThreadPerTaskExecutor();
     }
 
     @Bean
@@ -22,5 +21,4 @@ public class ExecutorServiceConfig {
     public ExecutorService platformThreadExecutor(){
         return Executors.newCachedThreadPool();
     }
-
 }
